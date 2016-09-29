@@ -21,6 +21,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <accessibility key="accessibilityConfiguration" identifier="Cell"/>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="VRO-2R-hRO">
                                 <rect key="frame" x="0.0" y="136" width="320" height="44"/>
