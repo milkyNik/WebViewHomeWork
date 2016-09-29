@@ -12,7 +12,7 @@
 		889FBF751D9D73FE00EB71DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 889FBF731D9D73FE00EB71DE /* Main.storyboard */; };
 		889FBF771D9D73FE00EB71DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 889FBF761D9D73FE00EB71DE /* Assets.xcassets */; };
 		889FBF7A1D9D73FE00EB71DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 889FBF781D9D73FE00EB71DE /* LaunchScreen.storyboard */; };
-		889FBF831D9D786600EB71DE /* HomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 889FBF821D9D786600EB71DE /* HomeTableViewController.m */; };
+		889FBF871D9D7B9A00EB71DE /* HomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 889FBF861D9D7B9A00EB71DE /* HomeTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +24,8 @@
 		889FBF761D9D73FE00EB71DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		889FBF791D9D73FE00EB71DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		889FBF7B1D9D73FE00EB71DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		889FBF811D9D786600EB71DE /* HomeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeTableViewController.h; path = ../HomeTableViewController.h; sourceTree = "<group>"; };
-		889FBF821D9D786600EB71DE /* HomeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeTableViewController.m; path = ../HomeTableViewController.m; sourceTree = "<group>"; };
+		889FBF851D9D7B9A00EB71DE /* HomeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewController.h; sourceTree = "<group>"; };
+		889FBF861D9D7B9A00EB71DE /* HomeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,8 +81,8 @@
 		889FBF841D9D788000EB71DE /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				889FBF811D9D786600EB71DE /* HomeTableViewController.h */,
-				889FBF821D9D786600EB71DE /* HomeTableViewController.m */,
+				889FBF851D9D7B9A00EB71DE /* HomeTableViewController.h */,
+				889FBF861D9D7B9A00EB71DE /* HomeTableViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -158,7 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				889FBF6F1D9D73FE00EB71DE /* AppDelegate.m in Sources */,
-				889FBF831D9D786600EB71DE /* HomeTableViewController.m in Sources */,
+				889FBF871D9D7B9A00EB71DE /* HomeTableViewController.m in Sources */,
 				889FBF6C1D9D73FE00EB71DE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
