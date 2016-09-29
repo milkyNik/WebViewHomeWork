@@ -79,21 +79,12 @@
 
 #pragma mark - UIWebViewDelegate
 
-- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
-    
-    NSLog(@"shouldStartLoadWithRequest %@", [request debugDescription]);
-    
-    return YES;
-}
-
 - (void)webViewDidStartLoad:(UIWebView *)webView {
-    NSLog(@"webViewDidStartLoad");
     
     [self.indicator startAnimating];
 }
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView {
-    NSLog(@"webViewDidFinishLoad");
     
     [self.indicator stopAnimating];
     
@@ -102,7 +93,7 @@
 }
 
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(nullable NSError *)error {
-    NSLog(@"didFailLoadWithError %@", [error localizedDescription]);
+    
     [self.indicator stopAnimating];
 }
 
