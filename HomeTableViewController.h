@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  HomeTableViewController.h
 //  WebViewHomeWork
 //
 //  Created by iMac on 29.09.16.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface HomeTableViewController : UITableViewController
 
 @end
-
