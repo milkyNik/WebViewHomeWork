@@ -7,6 +7,7 @@
 //
 
 #import "HomeTableViewController.h"
+#import "WebViewController.h"
 
 @interface HomeTableViewController ()
 
@@ -19,13 +20,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    const NSString* googleUrl = @"http://google.com";
-    const NSString* vkUrl = @"http://vk.com";
+    const NSString* url_1 = @"https://google.com";
+    const NSString* url_2 = @"https://vk.com";
+    const NSString* url_3 = @"https://apple.com";
     const NSString* pdf_1 = @"Objective-C";
     const NSString* pdf_2 = @"Quartz_2D";
     
     NSArray* pdfArray = @[pdf_1, pdf_2];
-    NSArray* urlArray = @[googleUrl,vkUrl];
+    NSArray* urlArray = @[url_1, url_2, url_3];
     
     self.sections = @[pdfArray, urlArray];
 
@@ -37,6 +39,20 @@
 }
 
 #pragma mark - UITableViewDelegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    WebViewController* webController = [self.storyboard instantiateViewControllerWithIdentifier:@"WebViewController"];
+    
+    [self.navigationController pushViewController:webController animated:YES];
+    
+    NSArray* urls = self.sections[indexPath.section];
+    
+    webController.urlString = urls[indexPath.row];
+   
+}
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
     

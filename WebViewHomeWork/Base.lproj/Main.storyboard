@@ -14,11 +14,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="J6P-CQ-uVo">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="J6P-CQ-uVo">
                                 <rect key="frame" x="0.0" y="92" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="J6P-CQ-uVo" id="fOU-xD-tvz">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <accessibility key="accessibilityConfiguration" identifier="Cell"/>
@@ -51,6 +51,64 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BQh-y1-bnC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="480" y="442"/>
+        </scene>
+        <!--WebViewController-->
+        <scene sceneID="Rgs-2P-sb6">
+            <objects>
+                <viewController storyboardIdentifier="WebViewController" title="WebViewController" id="ABT-kU-J8S" customClass="WebViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zFi-ZT-pxe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" id="xuQ-KY-v7H">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="ABT-kU-J8S" id="0Tv-57-cnp"/>
+                                </connections>
+                            </webView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" id="uID-Xk-T45">
+                                <rect key="frame" x="142" y="297" width="37" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" red="0.0" green="0.52971073575451122" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="ufb-kb-LkS">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem systemItem="rewind" id="F56-ls-l0Q">
+                                        <connections>
+                                            <action selector="actionBack:" destination="ABT-kU-J8S" id="t8L-FC-Hlu"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="fastForward" id="a8W-zc-0Mb">
+                                        <connections>
+                                            <action selector="actionForward:" destination="ABT-kU-J8S" id="OFz-Ob-Pvo"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="PSx-0m-2JE"/>
+                                    <barButtonItem systemItem="refresh" id="crb-Te-8dz">
+                                        <connections>
+                                            <action selector="actionRefresh:" destination="ABT-kU-J8S" id="0St-EA-upU"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="24I-Hn-Gmn"/>
+                    <connections>
+                        <outlet property="backButtonItem" destination="F56-ls-l0Q" id="MHI-aE-ePx"/>
+                        <outlet property="forwarfButtonItem" destination="a8W-zc-0Mb" id="6ct-3b-Ilp"/>
+                        <outlet property="indicator" destination="uID-Xk-T45" id="UKO-pd-IeH"/>
+                        <outlet property="webView" destination="xuQ-KY-v7H" id="Xz4-34-m2u"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FO9-qO-xg8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="879" y="442"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ks0-yf-mS0">

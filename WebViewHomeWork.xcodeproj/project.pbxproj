@@ -14,6 +14,7 @@
 		889FBF7A1D9D73FE00EB71DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 889FBF781D9D73FE00EB71DE /* LaunchScreen.storyboard */; };
 		889FBF871D9D7B9A00EB71DE /* HomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 889FBF861D9D7B9A00EB71DE /* HomeTableViewController.m */; };
 		889FBF891D9D84CA00EB71DE /* pdf in Resources */ = {isa = PBXBuildFile; fileRef = 889FBF881D9D84CA00EB71DE /* pdf */; };
+		889FBF8C1D9D938100EB71DE /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 889FBF8B1D9D938100EB71DE /* WebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,8 @@
 		889FBF851D9D7B9A00EB71DE /* HomeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewController.h; sourceTree = "<group>"; };
 		889FBF861D9D7B9A00EB71DE /* HomeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewController.m; sourceTree = "<group>"; };
 		889FBF881D9D84CA00EB71DE /* pdf */ = {isa = PBXFileReference; lastKnownFileType = folder; path = pdf; sourceTree = "<group>"; };
+		889FBF8A1D9D938100EB71DE /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		889FBF8B1D9D938100EB71DE /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +87,8 @@
 		889FBF841D9D788000EB71DE /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				889FBF8A1D9D938100EB71DE /* WebViewController.h */,
+				889FBF8B1D9D938100EB71DE /* WebViewController.m */,
 				889FBF851D9D7B9A00EB71DE /* HomeTableViewController.h */,
 				889FBF861D9D7B9A00EB71DE /* HomeTableViewController.m */,
 			);
@@ -163,6 +168,7 @@
 			files = (
 				889FBF6F1D9D73FE00EB71DE /* AppDelegate.m in Sources */,
 				889FBF871D9D7B9A00EB71DE /* HomeTableViewController.m in Sources */,
+				889FBF8C1D9D938100EB71DE /* WebViewController.m in Sources */,
 				889FBF6C1D9D73FE00EB71DE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
